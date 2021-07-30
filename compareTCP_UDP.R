@@ -1,0 +1,8 @@
+library(dplyr)
+tcp <- read.table('data/data-tcp.csv')
+udp <- read.table('data/data-udp.csv')
+colnames(tcp) <- c("download","retries")
+colnames(udp) <- c("download","retries")
+d <- bind_rows(data.frame('rate'=tcp$download, type=as.factor("tcp")), data.frame('rate'=udp$download, type=as.factor("udp")))
+anova(lm(rate~type, d))
+ggplot(d, aes(x=type, y=rate)) + geom_boxplot()

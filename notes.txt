@@ -1,0 +1,42 @@
+Seen on UDP tests (verbosity=4)
+===============================
+Fri Jul 30 18:37:58 2021 us=83845 Initialization Sequence Completed
+Fri Jul 30 18:39:58 2021 us=84742 PID_ERR replay-window backtrack occurred [29] [SSL-0] [0_____________________________0000000000000000000000000000000000] 0:326712 0:326683 t=1627663198[0] r=[0,64,15,29,1] sl=[39,64,64,528]
+
+curl
+
+tcp
+===
+curl "https://gemmei.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-10.10.0-amd64-netinst.iso" > /dev/null
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  336M  100  336M    0     0  7479k      0  0:00:45  0:00:45 --:--:-- 8053k
+
+
+udp
+===
+curl "https://gemmei.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-10.10.0-amd64-netinst.iso" > /dev/null
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  336M  100  336M    0     0  7185k      0  0:00:47  0:00:47 --:--:-- 7280k
+
+Fri Jul 30 18:48:35 2021 us=50836 PID_ERR large diff [323] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10246 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=50854 AEAD Decrypt error: bad packet ID (may be a replay): [ #10246 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+Fri Jul 30 18:48:35 2021 us=50895 PID_ERR large diff [322] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10247 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=50913 AEAD Decrypt error: bad packet ID (may be a replay): [ #10247 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+Fri Jul 30 18:48:35 2021 us=51010 PID_ERR large diff [321] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10248 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=51032 AEAD Decrypt error: bad packet ID (may be a replay): [ #10248 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+Fri Jul 30 18:48:35 2021 us=51076 PID_ERR large diff [320] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10249 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=51113 AEAD Decrypt error: bad packet ID (may be a replay): [ #10249 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+Fri Jul 30 18:48:35 2021 us=51205 PID_ERR large diff [319] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10250 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=51227 AEAD Decrypt error: bad packet ID (may be a replay): [ #10250 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+Fri Jul 30 18:48:35 2021 us=51273 PID_ERR large diff [318] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10251 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=51291 AEAD Decrypt error: bad packet ID (may be a replay): [ #10251 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+Fri Jul 30 18:48:35 2021 us=51369 PID_ERR large diff [317] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10252 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=51406 AEAD Decrypt error: bad packet ID (may be a replay): [ #10252 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+Fri Jul 30 18:48:35 2021 us=51470 PID_ERR large diff [316] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10253 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=51491 AEAD Decrypt error: bad packet ID (may be a replay): [ #10253 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+Fri Jul 30 18:48:35 2021 us=51574 PID_ERR large diff [315] [SSL-0] [0000000000000000000000000000000000000000000000000000000000000000] 0:10569 0:10254 t=1627663715[0] r=[-4,64,15,387,1] sl=[44,64,64,528]
+Fri Jul 30 18:48:35 2021 us=51597 AEAD Decrypt error: bad packet ID (may be a replay): [ #10254 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+
+
